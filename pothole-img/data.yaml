@@ -1,0 +1,6 @@
+train: /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train
+val: /home/lusitech/ComputerVision/PotholeDetection/pothole-img/valid
+test: /home/lusitech/ComputerVision/PotholeDetection/pothole-img/test
+
+nc: 3
+names: ['Manhole', 'Pothole', 'Unmarked Bump']

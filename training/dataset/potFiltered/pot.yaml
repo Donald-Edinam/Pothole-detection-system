@@ -1,0 +1,11 @@
+# Dataset Path
+# Dataset Path
+path: Potholes.v1i.coco
+train:
+- /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/train
+val:
+- /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/valid
+
+# Class Names List
+names:
+  0: Potholes
