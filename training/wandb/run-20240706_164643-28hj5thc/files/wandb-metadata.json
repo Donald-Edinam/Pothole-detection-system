@@ -1,0 +1,61 @@
+{
+    "os": "Linux-6.5.0-41-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-07-06T16:46:52.494824",
+    "startedAt": "2024-07-06T16:46:43.756233",
+    "docker": null,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "<python with no main file>",
+    "codePathLocal": null,
+    "host": "lusitech",
+    "username": "lusitech",
+    "executable": "/home/lusitech/ComputerVision/PotholeDetection/venv/bin/python",
+    "cpu_count": 2,
+    "cpu_count_logical": 4,
+    "cpu_freq": {
+        "current": 2700.00225,
+        "min": 400.0,
+        "max": 2800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 2600.244,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2645.744,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2600.465,
+            "min": 400.0,
+            "max": 2800.0
+        },
+        {
+            "current": 2644.759,
+            "min": 400.0,
+            "max": 2800.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 95.56452178955078,
+            "used": 87.19853210449219
+        }
+    },
+    "gpu": "NVIDIA GeForce 940MX",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce 940MX",
+            "memory_total": 2147483648
+        }
+    ],
+    "memory": {
+        "total": 15.466693878173828
+    }
+}
