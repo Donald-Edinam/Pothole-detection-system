@@ -1,0 +1,93 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/labels.cache... 2690 images, 19 backgrounds, 0 corrupt: 100%|██████████| 2690/2690 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/000132_r_jpg.rf.388b454b0fa18a968343ada821aad4c0.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/1000_png_jpg.rf.a805bbada52a98f9ae949943f02c160e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/1035_png_jpg.rf.279508ee3855e002cab330bee430963b.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/img_1681_jpg.rf.9603818885f548641d97989bc2102fce.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.9cb64c08d963657ff65d1906bfa43e49.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.a0c2034b557aa3d9092c2a2a9a2f103e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.d9c01dc9a06395d9f026471106f6d615.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-99_jpg.rf.4507e49d8e2fde1924d2348c287fcd1d.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/valid/labels.cache... 300 images, 8 backgrounds, 0 corrupt: 100%|██████████| 300/300 [00:00<?, ?it/s]
+Plotting labels to runs/segment/pothole2/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001429, momentum=0.9) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 0 dataloader workers
+Logging results to [1mruns/segment/pothole2
+Starting training for 100 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

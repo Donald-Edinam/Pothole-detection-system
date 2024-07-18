@@ -1,0 +1,34 @@
+2024-07-06 22:30:25,169 INFO    StreamThr :3185 [internal.py:wandb_internal():85] W&B internal server running at pid: 3185, started at: 2024-07-06 22:30:25.168465
+2024-07-06 22:30:25,174 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: status
+2024-07-06 22:30:25,182 INFO    WriterThread:3185 [datastore.py:open_for_write():87] open: /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240706_223025-vqxzkwwh/run-vqxzkwwh.wandb
+2024-07-06 22:30:25,183 DEBUG   SenderThread:3185 [sender.py:send():379] send: header
+2024-07-06 22:30:25,189 DEBUG   SenderThread:3185 [sender.py:send():379] send: run
+2024-07-06 22:30:30,191 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:30:35,193 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:30:40,195 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:30:45,197 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:30:50,201 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:30:55,202 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:31:00,204 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-06 22:31:01,268 INFO    SenderThread:3185 [dir_watcher.py:__init__():211] watching files in: /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240706_223025-vqxzkwwh/files
+2024-07-06 22:31:01,269 INFO    SenderThread:3185 [sender.py:_start_run_threads():1188] run started: vqxzkwwh with start time 1720305025.168762
+2024-07-06 22:31:01,270 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: status_report
+2024-07-06 22:31:01,302 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: check_version
+2024-07-06 22:31:01,302 DEBUG   SenderThread:3185 [sender.py:send_request():406] send_request: check_version
+2024-07-06 22:31:10,376 DEBUG   HandlerThread:3185 [handler.py:handle_request():158] handle_request: run_start
+2024-07-06 22:31:10,392 DEBUG   HandlerThread:3185 [system_info.py:__init__():26] System info init
+2024-07-06 22:31:10,392 DEBUG   HandlerThread:3185 [system_info.py:__init__():41] System info init done
+2024-07-06 22:31:10,392 INFO    HandlerThread:3185 [system_monitor.py:start():194] Starting system monitor
+2024-07-06 22:31:10,393 INFO    SystemMonitor:3185 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-06 22:31:10,393 INFO    HandlerThread:3185 [system_monitor.py:probe():214] Collecting system info
+2024-07-06 22:31:10,394 INFO    SystemMonitor:3185 [interfaces.py:start():188] Started cpu monitoring
+2024-07-06 22:31:10,394 INFO    SystemMonitor:3185 [interfaces.py:start():188] Started disk monitoring
+2024-07-06 22:31:10,396 INFO    SystemMonitor:3185 [interfaces.py:start():188] Started gpu monitoring
+2024-07-06 22:31:10,397 INFO    SystemMonitor:3185 [interfaces.py:start():188] Started memory monitoring
+2024-07-06 22:31:10,398 INFO    SystemMonitor:3185 [interfaces.py:start():188] Started network monitoring
+2024-07-06 22:31:10,404 ERROR   gpu       :3185 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-07-06 22:31:10,404 ERROR   gpu       :3185 [interfaces.py:monitor():142] Failed to sample metric: Not Supported
+2024-07-06 22:31:10,408 DEBUG   HandlerThread:3185 [system_info.py:probe():152] Probing system
+2024-07-06 22:31:10,410 DEBUG   HandlerThread:3185 [gitlib.py:_init_repo():56] git repository is invalid
+2024-07-06 22:31:10,411 DEBUG   HandlerThread:3185 [system_info.py:probe():200] Probing system done
+2024-07-06 22:31:10,411 DEBUG   HandlerThread:3185 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-41-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-07-06T22:31:10.408695', 'startedAt': '2024-07-06T22:30:25.153816', 'docker': None, 'cuda': None, 'args': (), 'sta

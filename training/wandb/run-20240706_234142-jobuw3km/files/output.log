@@ -1,0 +1,98 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/labels.cache... 1199 images, 11 backgrounds, 0 corrupt: 100%|██████████| 1199/1199 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/img_1681_jpg.rf.9603818885f548641d97989bc2102fce.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.9cb64c08d963657ff65d1906bfa43e49.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.a0c2034b557aa3d9092c2a2a9a2f103e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.d9c01dc9a06395d9f026471106f6d615.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-99_jpg.rf.4507e49d8e2fde1924d2348c287fcd1d.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/valid/labels.cache... 195 images, 8 backgrounds, 0 corrupt: 100%|██████████| 195/195 [00:00<?, ?it/s]
+Plotting labels to runs/segment/pothole3/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001429, momentum=0.9) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mruns/segment/pothole3
+Starting training for 50 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/38 [00:00<?, ?it/s]
+New https://pypi.org/project/ultralytics/8.2.50 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.0.201 🚀 Python-3.10.12 torch-2.0.0+cu117 CUDA:0 (NVIDIA GeForce 940MX, 2003MiB)
+[34m[1mengine/trainer: [39m[22mtask=segment, mode=train, model=yolov8n-seg.pt, data=/home/lusitech/ComputerVision/PotholeDetection/pothole-img/data.yaml, epochs=50, patience=50, batch=8, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=pothole4, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, show=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, vid_stride=1, stream_buffer=False, line_width=None, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, boxes=True, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, cfg=None, tracker=botsort.yaml, save_dir=runs/segment/pothole4
+Overriding model.yaml nc=80 with nc=3
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1   1004665  ultralytics.nn.modules.head.Segment          [3, 32, 64, [64, 128, 256]]
+YOLOv8n-seg summary: 261 layers, 3264201 parameters, 3264185 gradients, 12.1 GFLOPs
+Transferred 381/417 items from pretrained weights
+New https://pypi.org/project/ultralytics/8.2.50 available 😃 Update with 'pip install -U ultralytics'
+Ultralytics YOLOv8.0.201 🚀 Python-3.10.12 torch-2.0.0+cu117 CUDA:0 (NVIDIA GeForce 940MX, 2003MiB)
+[34m[1mengine/trainer: [39m[22mtask=segment, mode=train, model=yolov8n-seg.pt, data=/home/lusitech/ComputerVision/PotholeDetection/pothole-img/data.yaml, epochs=50, patience=50, batch=4, imgsz=640, save=True, save_period=-1, cache=False, device=None, workers=8, project=None, name=pothole5, exist_ok=False, pretrained=True, optimizer=auto, verbose=True, seed=0, deterministic=True, single_cls=False, rect=False, cos_lr=False, close_mosaic=10, resume=False, amp=True, fraction=1.0, profile=False, freeze=None, overlap_mask=True, mask_ratio=4, dropout=0.0, val=True, split=val, save_json=False, save_hybrid=False, conf=None, iou=0.7, max_det=300, half=False, dnn=False, plots=True, source=None, show=False, save_txt=False, save_conf=False, save_crop=False, show_labels=True, show_conf=True, vid_stride=1, stream_buffer=False, line_width=None, visualize=False, augment=False, agnostic_nms=False, classes=None, retina_masks=False, boxes=True, format=torchscript, keras=False, optimize=False, int8=False, dynamic=False, simplify=False, opset=None, workspace=4, nms=False, lr0=0.01, lrf=0.01, momentum=0.937, weight_decay=0.0005, warmup_epochs=3.0, warmup_momentum=0.8, warmup_bias_lr=0.1, box=7.5, cls=0.5, dfl=1.5, pose=12.0, kobj=1.0, label_smoothing=0.0, nbs=64, hsv_h=0.015, hsv_s=0.7, hsv_v=0.4, degrees=0.0, translate=0.1, scale=0.5, shear=0.0, perspective=0.0, flipud=0.0, fliplr=0.5, mosaic=1.0, mixup=0.0, copy_paste=0.0, cfg=None, tracker=botsort.yaml, save_dir=runs/segment/pothole5
+Overriding model.yaml nc=80 with nc=3
+                   from  n    params  module                                       arguments
+  0                  -1  1       464  ultralytics.nn.modules.conv.Conv             [3, 16, 3, 2]
+  1                  -1  1      4672  ultralytics.nn.modules.conv.Conv             [16, 32, 3, 2]
+  2                  -1  1      7360  ultralytics.nn.modules.block.C2f             [32, 32, 1, True]
+  3                  -1  1     18560  ultralytics.nn.modules.conv.Conv             [32, 64, 3, 2]
+  4                  -1  2     49664  ultralytics.nn.modules.block.C2f             [64, 64, 2, True]
+  5                  -1  1     73984  ultralytics.nn.modules.conv.Conv             [64, 128, 3, 2]
+  6                  -1  2    197632  ultralytics.nn.modules.block.C2f             [128, 128, 2, True]
+  7                  -1  1    295424  ultralytics.nn.modules.conv.Conv             [128, 256, 3, 2]
+  8                  -1  1    460288  ultralytics.nn.modules.block.C2f             [256, 256, 1, True]
+  9                  -1  1    164608  ultralytics.nn.modules.block.SPPF            [256, 256, 5]
+ 10                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 11             [-1, 6]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 12                  -1  1    148224  ultralytics.nn.modules.block.C2f             [384, 128, 1]
+ 13                  -1  1         0  torch.nn.modules.upsampling.Upsample         [None, 2, 'nearest']
+ 14             [-1, 4]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 15                  -1  1     37248  ultralytics.nn.modules.block.C2f             [192, 64, 1]
+ 16                  -1  1     36992  ultralytics.nn.modules.conv.Conv             [64, 64, 3, 2]
+ 17            [-1, 12]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 18                  -1  1    123648  ultralytics.nn.modules.block.C2f             [192, 128, 1]
+ 19                  -1  1    147712  ultralytics.nn.modules.conv.Conv             [128, 128, 3, 2]
+ 20             [-1, 9]  1         0  ultralytics.nn.modules.conv.Concat           [1]
+ 21                  -1  1    493056  ultralytics.nn.modules.block.C2f             [384, 256, 1]
+ 22        [15, 18, 21]  1   1004665  ultralytics.nn.modules.head.Segment          [3, 32, 64, [64, 128, 256]]
+YOLOv8n-seg summary: 261 layers, 3264201 parameters, 3264185 gradients, 12.1 GFLOPs
+Transferred 381/417 items from pretrained weights
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/labels.cache... 1199 images, 11 backgrounds, 0 corrupt: 100%|██████████| 1199/1199 [00:00<?, ?it/s]
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/img_1681_jpg.rf.9603818885f548641d97989bc2102fce.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.9cb64c08d963657ff65d1906bfa43e49.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.a0c2034b557aa3d9092c2a2a9a2f103e.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-40_jpg.rf.d9c01dc9a06395d9f026471106f6d615.jpg: 1 duplicate labels removed
+[34m[1mtrain: [39m[22mWARNING ⚠️ /home/lusitech/ComputerVision/PotholeDetection/pothole-img/train/images/youtube-99_jpg.rf.4507e49d8e2fde1924d2348c287fcd1d.jpg: 1 duplicate labels removed
+[34m[1mval: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/pothole-img/valid/labels.cache... 195 images, 8 backgrounds, 0 corrupt: 100%|██████████| 195/195 [00:00<?, ?it/s]
+Plotting labels to runs/segment/pothole5/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.001429, momentum=0.9) with parameter groups 66 weight(decay=0.0), 77 weight(decay=0.0005), 76 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mruns/segment/pothole5
+Starting training for 50 epochs...
+      Epoch    GPU_mem   box_loss   seg_loss   cls_loss   dfl_loss  Instances       Size
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  

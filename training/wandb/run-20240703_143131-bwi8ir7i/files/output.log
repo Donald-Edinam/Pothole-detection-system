@@ -1,0 +1,17 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+WARNING ⚠️ NMS time limit 0.550s exceeded
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/train.cache... 0 images, 19 backgrounds, 0 corrupt: 100%|██████████| 19/19 [00:00<?, ?it/s]
+WARNING ⚠️ No labels found in /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/train.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+[34m[1mval: [39m[22mScanning /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/valid.cache... 0 images, 5 backgrounds, 0 corrupt: 100%|██████████| 5/5 [00:00<?, ?it/s]
+WARNING ⚠️ No labels found in /home/lusitech/ComputerVision/PotholeDetection/Potholes.v1i.coco/valid.cache, training may not work correctly. See https://docs.ultralytics.com/datasets/detect for dataset formatting guidance.
+Plotting labels to pot/Baseline_YOLOv8Small_Filtered19/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.002, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+Image sizes 640 train, 640 val
+Using 4 dataloader workers
+Logging results to [1mpot/Baseline_YOLOv8Small_Filtered19
+Starting training for 50 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+  0%|          | 0/1 [00:00<?, ?it/s]

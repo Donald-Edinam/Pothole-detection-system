@@ -1,0 +1,110 @@
+2024-07-01 18:47:31,591 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Current SDK version is 0.17.1
+2024-07-01 18:47:31,591 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Configure stats pid to 3035
+2024-07-01 18:47:31,591 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Loading settings from /home/lusitech/.config/wandb/settings
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Loading settings from /home/lusitech/ComputerVision/PotholeDetection/training/wandb/settings
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Applying login settings: {'api_key': '***REDACTED***'}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-01 18:47:31,592 INFO    MainThread:3035 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-01 18:47:31,592 ERROR   MainThread:3035 [wandb_setup.py:_flush():78] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3577, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_3035/4020173733.py", line 11, in <module>
+    results = model.train(data=_data,
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/model.py", line 341, in train
+    self.trainer.train()
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 288, in _do_train
+    self._setup_train(world_size)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 210, in _setup_train
+    self.run_callbacks('on_pretrain_routine_start')
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 157, in run_callbacks
+    callback(self)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/utils/callbacks/wb.py", line 110, in on_pretrain_routine_start
+    wb.run or wb.init(project=trainer.args.project or 'YOLOv8', name=trainer.args.name, config=vars(trainer.args))
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1185, in init
+    wandb._sentry.reraise(e)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    wi.setup(kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 316, in setup
+    settings._apply_init(kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 1853, in _apply_init
+    self.update(init_settings, source=Source.INIT)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 1482, in update
+    self.__dict__[key].update(settings.pop(key), source=source)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 591, in update
+    self._value = self._validate(self._preprocess(value))
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 561, in _validate
+    if not v(value):
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 995, in _validate_project
+    raise UsageError(
+wandb.errors.UsageError: Invalid project name 'runs/RDD_JapanIndia': cannot contain characters '/,\\,#,?,%,:', found '/'
+2024-07-01 18:47:31,592 ERROR   MainThread:3035 [wandb_setup.py:_flush():78] error in wandb.init()
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/IPython/core/interactiveshell.py", line 3577, in run_code
+    exec(code_obj, self.user_global_ns, self.user_ns)
+  File "/tmp/ipykernel_3035/2604179095.py", line 11, in <module>
+    results = model.train(data=_data,
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/model.py", line 341, in train
+    self.trainer.train()
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 192, in train
+    self._do_train(world_size)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 288, in _do_train
+    self._setup_train(world_size)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 210, in _setup_train
+    self.run_callbacks('on_pretrain_routine_start')
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 157, in run_callbacks
+    callback(self)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/ultralytics/utils/callbacks/wb.py", line 110, in on_pretrain_routine_start
+    wb.run or wb.init(project=trainer.args.project or 'YOLOv8', name=trainer.args.name, config=vars(trainer.args))
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1185, in init
+    wandb._sentry.reraise(e)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/analytics/sentry.py", line 155, in reraise
+    raise exc.with_traceback(sys.exc_info()[2])
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 1170, in init
+    wi.setup(kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_init.py", line 316, in setup
+    settings._apply_init(kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 1853, in _apply_init
+    self.update(init_settings, source=Source.INIT)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 1482, in update
+    self.__dict__[key].update(settings.pop(key), source=source)
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 591, in update
+    self._value = self._validate(self._preprocess(value))
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 561, in _validate
+    if not v(value):
+  File "/home/lusitech/ComputerVision/PotholeDetection/env/lib/python3.10/site-packages/wandb/sdk/wandb_settings.py", line 995, in _validate_project
+    raise UsageError(
+wandb.errors.UsageError: Invalid project name 'training/runs/pot': cannot contain characters '/,\\,#,?,%,:', found '/'
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:_log_setup():520] Logging user logs to /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240701_184731-419hro10/logs/debug.log
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:_log_setup():521] Logging internal logs to /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240701_184731-419hro10/logs/debug-internal.log
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:_jupyter_setup():466] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x7e7fd5c3a860>
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:init():560] calling init triggers
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:init():567] wandb.init called with sweep_config: {}
+config: {'task': 'detect', 'mode': 'train', 'model': 'yolov8s.pt', 'data': '/home/lusitech/ComputerVision/PotholeDetection/training/dataset/rddJapanIndiaFiltered/rdd_JapanIndia.yaml', 'epochs': 100, 'patience': 50, 'batch': 32, 'imgsz': 640, 'save': True, 'save_period': 10, 'cache': False, 'device': None, 'workers': 1, 'project': 'pot', 'name': 'Baseline_YOLOv8Small_Filtered', 'exist_ok': False, 'pretrained': True, 'optimizer': 'auto', 'verbose': True, 'seed': 1337, 'deterministic': True, 'single_cls': False, 'rect': False, 'cos_lr': True, 'close_mosaic': 10, 'resume': False, 'amp': True, 'fraction': 1.0, 'profile': False, 'freeze': None, 'overlap_mask': True, 'mask_ratio': 4, 'dropout': 0.0, 'val': True, 'split': 'val', 'save_json': False, 'save_hybrid': False, 'conf': None, 'iou': 0.7, 'max_det': 300, 'half': False, 'dnn': False, 'plots': True, 'source': None, 'show': False, 'save_txt': False, 'save_conf': False, 'save_crop': False, 'show_labels': True, 'show_conf': True, 'vid_stride': 1, 'stream_buffer': False, 'line_width': None, 'visualize': False, 'augment': False, 'agnostic_nms': False, 'classes': None, 'retina_masks': False, 'boxes': True, 'format': 'torchscript', 'keras': False, 'optimize': False, 'int8': False, 'dynamic': False, 'simplify': False, 'opset': None, 'workspace': 4, 'nms': False, 'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 5, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 7.5, 'cls': 0.5, 'dfl': 1.5, 'pose': 12.0, 'kobj': 1.0, 'label_smoothing': 0.0, 'nbs': 64, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 0.0, 'mixup': 0.0, 'copy_paste': 0.0, 'cfg': None, 'tracker': 'botsort.yaml', 'save_dir': 'pot/Baseline_YOLOv8Small_Filtered'}
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:init():610] starting backend
+2024-07-01 18:47:31,593 INFO    MainThread:3035 [wandb_init.py:init():614] setting up manager
+2024-07-01 18:47:31,595 INFO    MainThread:3035 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-01 18:47:31,604 INFO    MainThread:3035 [wandb_init.py:init():622] backend started and connected
+2024-07-01 18:47:31,611 INFO    MainThread:3035 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-07-01 18:47:31,611 INFO    MainThread:3035 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-01 18:47:31,611 INFO    MainThread:3035 [wandb_init.py:init():711] updated telemetry
+2024-07-01 18:47:31,614 INFO    MainThread:3035 [wandb_init.py:init():744] communicating run to backend with 90.0 second timeout
+2024-07-01 18:47:39,236 INFO    MainThread:3035 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-01 18:47:40,316 INFO    MainThread:3035 [wandb_run.py:_on_init():2411] got version response upgrade_message: "wandb version 0.17.3 is available!  To upgrade, please run:\n $ pip install wandb --upgrade"
+
+2024-07-01 18:47:40,317 INFO    MainThread:3035 [wandb_init.py:init():795] starting run threads in backend
+2024-07-01 18:47:40,660 INFO    MainThread:3035 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-01 18:47:40,661 INFO    MainThread:3035 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-01 18:47:40,661 INFO    MainThread:3035 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-01 18:47:40,661 INFO    MainThread:3035 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-01 18:47:40,663 INFO    MainThread:3035 [wandb_init.py:init():838] run started, returning control to user process
+2024-07-01 18:47:47,018 INFO    MainThread:3035 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-07-01 18:47:47,018 INFO    MainThread:3035 [wandb_init.py:_pause_backend():431] pausing backend

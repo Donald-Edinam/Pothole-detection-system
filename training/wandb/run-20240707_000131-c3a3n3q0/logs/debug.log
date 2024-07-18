@@ -1,0 +1,454 @@
+2024-07-07 00:01:31,143 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Current SDK version is 0.17.4
+2024-07-07 00:01:31,144 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Configure stats pid to 2870
+2024-07-07 00:01:31,144 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Loading settings from /home/lusitech/.config/wandb/settings
+2024-07-07 00:01:31,146 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Loading settings from /home/lusitech/ComputerVision/PotholeDetection/training/wandb/settings
+2024-07-07 00:01:31,147 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Loading settings from environment variables: {}
+2024-07-07 00:01:31,147 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Applying setup settings: {'_disable_service': False}
+2024-07-07 00:01:31,148 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Inferring run settings from compute environment: {'program': '<python with no main file>'}
+2024-07-07 00:01:31,148 INFO    MainThread:2870 [wandb_setup.py:_flush():76] Applying login settings: {}
+2024-07-07 00:01:31,149 INFO    MainThread:2870 [wandb_init.py:_log_setup():529] Logging user logs to /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240707_000131-c3a3n3q0/logs/debug.log
+2024-07-07 00:01:31,150 INFO    MainThread:2870 [wandb_init.py:_log_setup():530] Logging internal logs to /home/lusitech/ComputerVision/PotholeDetection/training/wandb/run-20240707_000131-c3a3n3q0/logs/debug-internal.log
+2024-07-07 00:01:31,150 INFO    MainThread:2870 [wandb_init.py:_jupyter_setup():475] configuring jupyter hooks <wandb.sdk.wandb_init._WandbInit object at 0x76224061f250>
+2024-07-07 00:01:31,153 INFO    MainThread:2870 [wandb_init.py:init():569] calling init triggers
+2024-07-07 00:01:31,154 INFO    MainThread:2870 [wandb_init.py:init():576] wandb.init called with sweep_config: {}
+config: {'task': 'segment', 'mode': 'train', 'model': 'yolov8n-seg.pt', 'data': '/home/lusitech/ComputerVision/PotholeDetection/pothole-img/data.yaml', 'epochs': 50, 'patience': 50, 'batch': 16, 'imgsz': 640, 'save': True, 'save_period': -1, 'cache': False, 'device': 'cpu', 'workers': 0, 'project': None, 'name': 'pothole2', 'exist_ok': False, 'pretrained': True, 'optimizer': 'auto', 'verbose': True, 'seed': 0, 'deterministic': True, 'single_cls': False, 'rect': False, 'cos_lr': False, 'close_mosaic': 10, 'resume': False, 'amp': True, 'fraction': 1.0, 'profile': False, 'freeze': None, 'overlap_mask': True, 'mask_ratio': 4, 'dropout': 0.0, 'val': True, 'split': 'val', 'save_json': False, 'save_hybrid': False, 'conf': None, 'iou': 0.7, 'max_det': 300, 'half': False, 'dnn': False, 'plots': True, 'source': None, 'show': False, 'save_txt': False, 'save_conf': False, 'save_crop': False, 'show_labels': True, 'show_conf': True, 'vid_stride': 1, 'stream_buffer': False, 'line_width': None, 'visualize': False, 'augment': False, 'agnostic_nms': False, 'classes': None, 'retina_masks': False, 'boxes': True, 'format': 'torchscript', 'keras': False, 'optimize': False, 'int8': False, 'dynamic': False, 'simplify': False, 'opset': None, 'workspace': 4, 'nms': False, 'lr0': 0.01, 'lrf': 0.01, 'momentum': 0.937, 'weight_decay': 0.0005, 'warmup_epochs': 3.0, 'warmup_momentum': 0.8, 'warmup_bias_lr': 0.1, 'box': 7.5, 'cls': 0.5, 'dfl': 1.5, 'pose': 12.0, 'kobj': 1.0, 'label_smoothing': 0.0, 'nbs': 64, 'hsv_h': 0.015, 'hsv_s': 0.7, 'hsv_v': 0.4, 'degrees': 0.0, 'translate': 0.1, 'scale': 0.5, 'shear': 0.0, 'perspective': 0.0, 'flipud': 0.0, 'fliplr': 0.5, 'mosaic': 1.0, 'mixup': 0.0, 'copy_paste': 0.0, 'cfg': None, 'tracker': 'botsort.yaml', 'save_dir': 'runs/segment/pothole2'}
+2024-07-07 00:01:31,155 INFO    MainThread:2870 [wandb_init.py:init():619] starting backend
+2024-07-07 00:01:31,156 INFO    MainThread:2870 [wandb_init.py:init():623] setting up manager
+2024-07-07 00:01:31,187 INFO    MainThread:2870 [backend.py:_multiprocessing_setup():105] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2024-07-07 00:01:31,193 INFO    MainThread:2870 [wandb_init.py:init():631] backend started and connected
+2024-07-07 00:01:31,213 INFO    MainThread:2870 [wandb_run.py:_label_probe_notebook():1334] probe notebook
+2024-07-07 00:01:31,213 INFO    MainThread:2870 [wandb_run.py:_label_probe_notebook():1344] Unable to probe notebook: 'NoneType' object has no attribute 'get'
+2024-07-07 00:01:31,213 INFO    MainThread:2870 [wandb_init.py:init():720] updated telemetry
+2024-07-07 00:01:31,217 INFO    MainThread:2870 [wandb_init.py:init():753] communicating run to backend with 90.0 second timeout
+2024-07-07 00:01:32,433 INFO    MainThread:2870 [wandb_run.py:_on_init():2402] communicating current version
+2024-07-07 00:01:32,947 INFO    MainThread:2870 [wandb_run.py:_on_init():2411] got version response 
+2024-07-07 00:01:32,947 INFO    MainThread:2870 [wandb_init.py:init():804] starting run threads in backend
+2024-07-07 00:01:33,231 INFO    MainThread:2870 [wandb_run.py:_console_start():2380] atexit reg
+2024-07-07 00:01:33,232 INFO    MainThread:2870 [wandb_run.py:_redirect():2235] redirect: wrap_raw
+2024-07-07 00:01:33,232 INFO    MainThread:2870 [wandb_run.py:_redirect():2300] Wrapping output streams.
+2024-07-07 00:01:33,232 INFO    MainThread:2870 [wandb_run.py:_redirect():2325] Redirects installed.
+2024-07-07 00:01:33,240 INFO    MainThread:2870 [wandb_init.py:init():847] run started, returning control to user process
+2024-07-07 15:34:03,515 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x76220542e080>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x76220542e080>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x76220542e080>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:34:34,502 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Precision-Recall(B)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Precision-Recall(B)', 'x-axis-title': 'Recall', 'y-axis-title': 'Precision'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Precision-Recall(B)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:34:38,001 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7622052d3af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622052d3af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622052d3af0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:35:08,638 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/F1-Confidence(B)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'F1-Confidence(B)', 'x-axis-title': 'Confidence', 'y-axis-title': 'F1'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/F1-Confidence(B)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:35:12,261 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7622040a9f30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622040a9f30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622040a9f30>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:35:43,606 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Precision-Confidence(B)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Precision-Confidence(B)', 'x-axis-title': 'Confidence', 'y-axis-title': 'Precision'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Precision-Confidence(B)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:35:47,227 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x7622040e1f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622040e1f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x7622040e1f90>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:36:18,754 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Recall-Confidence(B)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Recall-Confidence(B)', 'x-axis-title': 'Confidence', 'y-axis-title': 'Recall'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Recall-Confidence(B)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:36:22,214 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x76220406caf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x76220406caf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x76220406caf0>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:36:53,834 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Precision-Recall(M)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Precision-Recall(M)', 'x-axis-title': 'Recall', 'y-axis-title': 'Precision'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Precision-Recall(M)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:36:57,176 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x762203d99300>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762203d99300>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762203d99300>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:37:28,075 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/F1-Confidence(M)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'F1-Confidence(M)', 'x-axis-title': 'Confidence', 'y-axis-title': 'F1'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/F1-Confidence(M)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:37:31,396 INFO    MainThread:2870 [retry.py:__call__():172] Retry attempt failed:
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/connection.py", line 72, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+  File "/usr/lib/python3.10/socket.py", line 955, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+socket.gaierror: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 715, in urlopen
+    httplib_response = self._make_request(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 404, in _make_request
+    self._validate_conn(conn)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 1060, in _validate_conn
+    conn.connect()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 363, in connect
+    self.sock = conn = self._new_conn()
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPSConnection object at 0x762204088310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/connectionpool.py", line 801, in urlopen
+    retries = retries.increment(
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/urllib3/util/retry.py", line 594, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762204088310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/retry.py", line 131, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/apis/public/api.py", line 70, in execute
+    return self._client.execute(*args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/wandb/sdk/lib/gql_request.py", line 58, in execute
+    request = self.session.post(self.url, **post_args)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "/home/lusitech/ComputerVision/PotholeDetection/venv/lib/python3.10/site-packages/requests/adapters.py", line 565, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by NewConnectionError('<urllib3.connection.HTTPSConnection object at 0x762204088310>: Failed to establish a new connection: [Errno -3] Temporary failure in name resolution'))
+2024-07-07 15:38:03,460 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Precision-Confidence(M)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Precision-Confidence(M)', 'x-axis-title': 'Confidence', 'y-axis-title': 'Precision'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Precision-Confidence(M)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:38:04,694 INFO    MainThread:2870 [wandb_run.py:_config_callback():1382] config_cb ('_wandb', 'visualize', 'curves/Recall-Confidence(M)') {'panel_type': 'Vega2', 'panel_config': {'panelDefId': 'wandb/area-under-curve/v0', 'fieldSettings': {'x': 'x', 'y': 'y', 'class': 'class'}, 'stringSettings': {'title': 'Recall-Confidence(M)', 'x-axis-title': 'Confidence', 'y-axis-title': 'Recall'}, 'transform': {'name': 'tableWithLeafColNames'}, 'userQuery': {'queryFields': [{'name': 'runSets', 'args': [{'name': 'runSets', 'value': '${runSets}'}], 'fields': [{'name': 'id', 'fields': []}, {'name': 'name', 'fields': []}, {'name': '_defaultColorIndex', 'fields': []}, {'name': 'summaryTable', 'args': [{'name': 'tableKey', 'value': 'curves/Recall-Confidence(M)_table'}], 'fields': []}]}]}}} None
+2024-07-07 15:38:05,643 INFO    MainThread:2870 [wandb_run.py:_finish():2109] finishing run hamdanialhassangandi2020-Kwame Nkrumah University of Sci/YOLOv8/c3a3n3q0
+2024-07-07 15:38:05,644 ERROR   MainThread:2870 [jupyter.py:save_history():436] Run pip install nbformat to save notebook history
+2024-07-07 15:38:05,644 INFO    MainThread:2870 [jupyter.py:save_ipynb():372] not saving jupyter notebook
+2024-07-07 15:38:05,644 INFO    MainThread:2870 [wandb_init.py:_jupyter_teardown():457] cleaning up jupyter logic
+2024-07-07 15:38:05,644 INFO    MainThread:2870 [wandb_run.py:_atexit_cleanup():2349] got exitcode: 0
+2024-07-07 15:38:05,644 INFO    MainThread:2870 [wandb_run.py:_restore():2332] restore
+2024-07-07 15:38:05,644 INFO    MainThread:2870 [wandb_run.py:_restore():2338] restore done
+2024-07-07 15:41:09,566 INFO    MainThread:2870 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-07 15:41:09,575 INFO    MainThread:2870 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-07 15:41:09,592 INFO    MainThread:2870 [wandb_run.py:_footer_sync_info():3950] logging synced files
